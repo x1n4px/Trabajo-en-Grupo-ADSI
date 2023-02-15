@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="82ADC28C-AE98-20D2-93DD-F7DB8BC17C68" name="Relation_10">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EXAMEN_FechaYHora" id="7F79077D-89C9-B9A6-3842-A01D7045344A">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AB7B85DC-A390-1716-EE3A-C79C5695E22A" referredColumn="69D06576-55B5-C297-1FB6-3F5A7982BE07"/>
+</associations>
+</Column>
+<Column name="EXAMEN_Código" id="A36F6004-FC3E-9DBF-B372-26B5A3713710">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AB7B85DC-A390-1716-EE3A-C79C5695E22A" referredColumn="2F8D7049-89F6-1FCA-5885-5D6ACE3DF252"/>
+</associations>
+</Column>
+<Column name="EXAMEN_Código1" id="ACD4D62F-1F76-AA3E-1321-B82165DF95CF">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AB7B85DC-A390-1716-EE3A-C79C5695E22A" referredColumn="859B2035-D622-59A0-DE9D-FA4247B2996C"/>
+</associations>
+</Column>
+<Column name="MATERIA_Código" id="D176F14D-4086-E269-7F27-448C6881D138">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="968FBB73-F665-0990-5C90-EC4B6FCA3DCB" referredColumn="13B28FA1-41F6-1B1A-6035-3F684C5D62A0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B3EF261-9039-AAC7-FFF6-3EA80B985D55" name="Relation_10_PK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F79077D-89C9-B9A6-3842-A01D7045344A"/>
+<colUsage columnID="A36F6004-FC3E-9DBF-B372-26B5A3713710"/>
+<colUsage columnID="ACD4D62F-1F76-AA3E-1321-B82165DF95CF"/>
+<colUsage columnID="D176F14D-4086-E269-7F27-448C6881D138"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8BB0E91-8C66-CC9D-9B70-B9FD035B2F96" name="Relation_10_EXAMEN_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>AC069B71-2745-7216-B356-A2AB2A99F0F9</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F79077D-89C9-B9A6-3842-A01D7045344A"/>
+<colUsage columnID="A36F6004-FC3E-9DBF-B372-26B5A3713710"/>
+<colUsage columnID="ACD4D62F-1F76-AA3E-1321-B82165DF95CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E7CFF38-8AB1-5B09-E743-BB37D30E9DBC" name="Relation_10_MATERIA_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>AC069B71-2745-7216-B356-A2AB2A99F0F9</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D176F14D-4086-E269-7F27-448C6881D138"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

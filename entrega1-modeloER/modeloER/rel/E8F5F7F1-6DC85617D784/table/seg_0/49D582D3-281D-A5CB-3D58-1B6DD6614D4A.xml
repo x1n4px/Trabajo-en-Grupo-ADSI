@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="49D582D3-281D-A5CB-3D58-1B6DD6614D4A" name="ANE">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>B1D18FC4-3C2C-4590-74F7-515A02B0E929</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DNI" id="97EA9B57-B428-04AA-4607-66AC2D9C301B">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>E8234DB3-599D-A02C-2AFF-6D9FDF88265E</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2180472B-1100-73D5-DCAF-28F735C2E16E" referredColumn="12A70A95-DDD4-FBFE-CB09-EFC3388E6E5F"/>
+</associations>
+</Column>
+<Column name="Descabezar" id="417E3CD2-D5C3-177E-6C1C-8FBD9CF18589">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>F93A089E-4A76-D2F1-6515-813C946FC460</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AulaAParte" id="F8D4A47C-0C4D-183A-7987-D44164E54047">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>763AD05F-E191-375C-E823-1D9750BC4A78</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C11EF56-2B46-0869-1014-6D45C4153AE7" name="ANE_PK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>9615D77F-86A1-060F-27DA-E1CAB608FA12</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97EA9B57-B428-04AA-4607-66AC2D9C301B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2FC79EB-64EB-FB10-5B52-D4E039DDE9D5" name="ANE_ESTUDIANTE_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>C38CD21F-192F-3C24-40C5-EA0B73F66F7D</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97EA9B57-B428-04AA-4607-66AC2D9C301B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

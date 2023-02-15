@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D6F2C76-7AC8-A265-9DE0-F7A62E7F1E5F" name="SEDE">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>16600B16-49C9-9009-0667-4F963CE9E93C</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Código" id="04173F4C-E8A3-3551-0E57-1734B8C8E7A8">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>3E588CEE-A227-B27B-C5EC-F577D4D62969</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="2B28CEA7-3ABB-F687-8F2D-68FA3901EC66">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>3659036C-8832-973D-1963-E6202751A145</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo" id="12824253-6598-63ED-8C01-1523E21E29D7">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>DE85E578-CCD5-AB9B-02AD-7D0AF748F8D6</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VOCAL_DNI" id="04F12860-CBE5-8DC7-EE9C-C33D72861D19">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>D2C057C9-6C76-87FE-CC44-7C4F74AB4ECD</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8DA473CA-A310-187B-DD9E-8DC9AA8840A7" referredColumn="3B8C4CC1-114C-65D2-9A39-755B411E285F"/>
+</associations>
+</Column>
+<Column name="VOCAL_DNI2" id="E17E8021-7715-1263-A259-0D8037B151C1">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>ACB08C10-53D8-0C50-C9F5-DA7FFDE97A0C</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13F89B5D-3307-D84F-9A8C-7EA77445DCA3" referredColumn="3B8C4CC1-114C-65D2-9A39-755B411E285F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F20BC3BD-0CBD-526D-AC31-C30A7A67E801" name="SEDE_PK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>A8BADAD6-2482-D2EC-E9BE-3FF31C973FBB</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04173F4C-E8A3-3551-0E57-1734B8C8E7A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96EE8A9A-8219-A9A9-5AF7-9B3957541977" name="SEDE__IDX">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5502ED88-85C4-3D5F-B2A1-84C00DA6E1E2</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="04F12860-CBE5-8DC7-EE9C-C33D72861D19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2923E05A-4039-A886-C757-385885B68340" name="SEDE__IDXv1">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>405F54C3-4AF2-7224-EB1E-BEDF2D267A90</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E17E8021-7715-1263-A259-0D8037B151C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D49B122-6C2B-C8D6-40C8-5E87BA8616D6" name="SEDE_VOCAL_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>5502ED88-85C4-3D5F-B2A1-84C00DA6E1E2</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04F12860-CBE5-8DC7-EE9C-C33D72861D19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40E622C3-95F2-6AF8-AA89-11184734506A" name="SEDE_VOCAL_FKv2">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>405F54C3-4AF2-7224-EB1E-BEDF2D267A90</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E17E8021-7715-1263-A259-0D8037B151C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

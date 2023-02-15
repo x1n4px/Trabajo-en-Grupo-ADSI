@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RVocal-Materia" directorySegmentName="seg_0" id="C01CE411-769E-A0BB-1592-678234B39C65">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:57:21 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<targetPk>9CA0B2A0-FFF7-AF2C-5BBF-4AE1DF76B1C5</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>DA98026A-D48D-BF24-D8CF-61C5C30DD3FE</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>EB232D17-C2B3-3969-74C9-83B8D4613270</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

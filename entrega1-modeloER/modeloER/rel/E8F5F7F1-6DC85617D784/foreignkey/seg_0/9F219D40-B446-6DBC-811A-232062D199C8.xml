@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9F219D40-B446-6DBC-811A-232062D199C8" containerWithKeyObject="ABE897F9-F494-8BE2-B9C2-9D0B2E829332" localFKIndex="A9C6A9C6-F19D-156B-68A2-25D903856296" name="EXAMEN_VOCAL_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>64C8E80F-A10A-6944-984D-DC19DEF2548A</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<referredTableLongName>VOCAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6D760531-88F5-8B74-022E-1CF571829C1E</referredTableID>
+<keyObject>0EA3DC96-2EB2-8352-A63D-BCAD81BF5C33</keyObject>
+<referredKeyID>0EA3DC96-2EB2-8352-A63D-BCAD81BF5C33</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DNI</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

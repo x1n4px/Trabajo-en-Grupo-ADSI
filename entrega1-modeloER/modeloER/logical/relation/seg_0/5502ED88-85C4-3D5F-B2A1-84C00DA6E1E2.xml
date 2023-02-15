@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="5502ED88-85C4-3D5F-B2A1-84C00DA6E1E2">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:52:13 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<sourcePk>A8BADAD6-2482-D2EC-E9BE-3FF31C973FBB</sourcePk>
+<targetPk>0CBD72B8-7721-1AD0-85ED-3C5B09253BD6</targetPk>
+<identifying>false</identifying>
+<nameOnSource>Secretario</nameOnSource>
+<nameOnTarget>Ejerce de</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>16600B16-49C9-9009-0667-4F963CE9E93C</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>DA98026A-D48D-BF24-D8CF-61C5C30DD3FE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

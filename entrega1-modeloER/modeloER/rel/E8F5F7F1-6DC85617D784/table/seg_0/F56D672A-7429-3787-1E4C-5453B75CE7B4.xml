@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F56D672A-7429-3787-1E4C-5453B75CE7B4" name="Relation_11">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MATERIA_Código" id="BAA81C6F-1348-9F1F-0396-C50C8188E525">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6DB720FD-0F01-321A-C472-0CB48DFD8827" referredColumn="13B28FA1-41F6-1B1A-6035-3F684C5D62A0"/>
+</associations>
+</Column>
+<Column name="ESTUDIANTE_DNI" id="5F7F82B8-5E45-AF98-8E35-287F81E9B2EB">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9ABE9899-08BD-70D7-642E-5357714B93EB" referredColumn="12A70A95-DDD4-FBFE-CB09-EFC3388E6E5F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2232F900-AE20-2E03-2846-48D248CDAF18" name="Relation_11_PK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAA81C6F-1348-9F1F-0396-C50C8188E525"/>
+<colUsage columnID="5F7F82B8-5E45-AF98-8E35-287F81E9B2EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4DC4959E-88C9-4335-5D27-03A39B6B5696" name="Relation_11_MATERIA_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>2745225F-9E24-B735-C76D-E05D30C4A246</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAA81C6F-1348-9F1F-0396-C50C8188E525"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8C68AF2-71E9-0585-AAD7-CE7450373F4B" name="Relation_11_ESTUDIANTE_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>2745225F-9E24-B735-C76D-E05D30C4A246</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F7F82B8-5E45-AF98-8E35-287F81E9B2EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

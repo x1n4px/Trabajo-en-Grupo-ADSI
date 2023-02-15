@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8B2F527C-897E-313A-47CC-89DEB8173203" name="ASISTENCIA">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:44:37 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Asiste" id="4BDF8DF0-76F9-C4E7-38B5-F0445B4BF84C">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:44:41 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Entrega" id="70A37714-D08D-53BC-2859-B267F532562B">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:45:04 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaYHora" id="346E7B1F-9944-D431-70C0-F35BD6340FEC">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:53:18 UTC</createdTime>
+<generatorID>CBC6DA42-C4B4-87F2-78F2-0DBECF9E3698</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<referedAttribute>AE30B885-A93A-7494-D9B5-1410AF35AF89</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Código" id="FB7DF3A5-20A7-70A0-D5EB-82605EAF134D">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:53:18 UTC</createdTime>
+<generatorID>CBC6DA42-C4B4-87F2-78F2-0DBECF9E3698</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<referedAttribute>D70EF249-7B37-8FA4-D700-FC8E2C5A59CA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Código1" id="E1DBBE05-39B9-09B2-5175-662F9D38F198">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:53:18 UTC</createdTime>
+<generatorID>CBC6DA42-C4B4-87F2-78F2-0DBECF9E3698</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<referedAttribute>8EE6A629-481D-AB4E-5BD7-F6D21F0DB9A8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DNI" id="A53F28FB-C8C7-3A4C-AA69-5DA075A1D45A">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:53:28 UTC</createdTime>
+<generatorID>DCD63E27-B843-CB41-7F92-43BABD3526CC</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<referedAttribute>E8234DB3-599D-A02C-2AFF-6D9FDF88265E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Código2" id="3E221EC9-7E23-1F3E-3B5B-5E9407FA9E2F">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:53:41 UTC</createdTime>
+<generatorID>26B90FAE-3EDC-05FD-02C2-3C1FE6301521</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<referedAttribute>CB0179D8-7C5B-281E-F39B-806BED475F78</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7EA269AF-AD88-E811-B11D-584CCB7EFCBE" name="ASISTENCIA PK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:53:22 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>346E7B1F-9944-D431-70C0-F35BD6340FEC</attributeRef>
+<attributeRef>FB7DF3A5-20A7-70A0-D5EB-82605EAF134D</attributeRef>
+<attributeRef>E1DBBE05-39B9-09B2-5175-662F9D38F198</attributeRef>
+<attributeRef>A53F28FB-C8C7-3A4C-AA69-5DA075A1D45A</attributeRef>
+<attributeRef>3E221EC9-7E23-1F3E-3B5B-5E9407FA9E2F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

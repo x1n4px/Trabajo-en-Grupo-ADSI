@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RSede-Centro" directorySegmentName="seg_0" id="16CCBCDC-9D85-9FB3-B2EE-B54B88E86EF4">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:51:13 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<sourcePk>A8BADAD6-2482-D2EC-E9BE-3FF31C973FBB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>16600B16-49C9-9009-0667-4F963CE9E93C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DB1D5B06-0B94-B79B-13EA-19167FEACAD6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

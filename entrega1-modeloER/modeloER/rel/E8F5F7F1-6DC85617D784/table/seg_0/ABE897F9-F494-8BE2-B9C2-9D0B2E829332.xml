@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ABE897F9-F494-8BE2-B9C2-9D0B2E829332" name="EXAMEN">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>77FA54FD-4713-C2EC-7640-0987991C8DC9</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FechaYHora" id="69D06576-55B5-C297-1FB6-3F5A7982BE07">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>AE30B885-A93A-7494-D9B5-1410AF35AF89</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AULA_Código" id="2F8D7049-89F6-1FCA-5885-5D6ACE3DF252">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>D70EF249-7B37-8FA4-D700-FC8E2C5A59CA</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EEA30C97-5637-6A21-CF5B-A3EFC79E8F80" referredColumn="FB7E54BE-CE22-170C-42FC-43AFA07B2569"/>
+</associations>
+</Column>
+<Column name="AULA_Código1" id="859B2035-D622-59A0-DE9D-FA4247B2996C">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>8EE6A629-481D-AB4E-5BD7-F6D21F0DB9A8</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EEA30C97-5637-6A21-CF5B-A3EFC79E8F80" referredColumn="6AECE2E8-2E4F-FB98-0216-F8DD0B8693B4"/>
+</associations>
+</Column>
+<Column name="VOCAL_DNI" id="3834874A-30AD-139A-7079-C34FB67711B3">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>39FECB15-9F1D-6B60-014D-3FD9F54E7CCF</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F219D40-B446-6DBC-811A-232062D199C8" referredColumn="3B8C4CC1-114C-65D2-9A39-755B411E285F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="501D85F4-4885-037F-C430-914E5B81BB5C" name="EXAMEN_PK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>1C841838-7A29-AF93-D758-76E085F02A33</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69D06576-55B5-C297-1FB6-3F5A7982BE07"/>
+<colUsage columnID="2F8D7049-89F6-1FCA-5885-5D6ACE3DF252"/>
+<colUsage columnID="859B2035-D622-59A0-DE9D-FA4247B2996C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7D6CB89-87E4-F1A9-699D-7B755EB5F54A" name="EXAMEN_AULA_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>904FDBBD-D3C4-23C6-F467-FA61D4ED6580</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F8D7049-89F6-1FCA-5885-5D6ACE3DF252"/>
+<colUsage columnID="859B2035-D622-59A0-DE9D-FA4247B2996C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9C6A9C6-F19D-156B-68A2-25D903856296" name="EXAMEN_VOCAL_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>64C8E80F-A10A-6944-984D-DC19DEF2548A</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3834874A-30AD-139A-7079-C34FB67711B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

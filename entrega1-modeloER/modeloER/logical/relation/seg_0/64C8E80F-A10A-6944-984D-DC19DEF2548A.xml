@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RVocal-Examen" directorySegmentName="seg_0" id="64C8E80F-A10A-6944-984D-DC19DEF2548A">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:54:27 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<sourcePk>0CBD72B8-7721-1AD0-85ED-3C5B09253BD6</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>Responsable</nameOnSource>
+<nameOnTarget>Responsable</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DA98026A-D48D-BF24-D8CF-61C5C30DD3FE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>77FA54FD-4713-C2EC-7640-0987991C8DC9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

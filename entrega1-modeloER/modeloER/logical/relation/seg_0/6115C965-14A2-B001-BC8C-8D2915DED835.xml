@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RSede-Aula" directorySegmentName="seg_0" id="6115C965-14A2-B001-BC8C-8D2915DED835">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:51:29 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<sourcePk>A8BADAD6-2482-D2EC-E9BE-3FF31C973FBB</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>16600B16-49C9-9009-0667-4F963CE9E93C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E0CF21A6-255C-958E-99EE-208C7D0D6B54</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

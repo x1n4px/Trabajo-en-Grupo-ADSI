@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RCentro-Estudiante" directorySegmentName="seg_0" id="2057D170-1F27-5325-525C-08641A75030D">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:50:13 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<sourcePk>1C49308E-4A7F-4E67-4A18-DC619F93B05D</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>aporta</nameOnSource>
+<nameOnTarget>provi</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DB1D5B06-0B94-B79B-13EA-19167FEACAD6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C2F55674-A40D-4350-44B0-FA4F00370C66</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
