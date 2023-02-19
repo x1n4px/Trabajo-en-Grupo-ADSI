@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2180472B-1100-73D5-DCAF-28F735C2E16E" containerWithKeyObject="49D582D3-281D-A5CB-3D58-1B6DD6614D4A" localFKIndex="E2FC79EB-64EB-FB10-5B52-D4E039DDE9D5" name="ANE_ESTUDIANTE_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>C38CD21F-192F-3C24-40C5-EA0B73F66F7D</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<referredTableLongName>ESTUDIANTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B8F18C05-38A7-694A-33A5-D9BBD24D00F1</referredTableID>
+<keyObject>C7475E7E-6CBC-7D6E-1FBB-D2CF5DE788E5</keyObject>
+<referredKeyID>C7475E7E-6CBC-7D6E-1FBB-D2CF5DE788E5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DNI</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

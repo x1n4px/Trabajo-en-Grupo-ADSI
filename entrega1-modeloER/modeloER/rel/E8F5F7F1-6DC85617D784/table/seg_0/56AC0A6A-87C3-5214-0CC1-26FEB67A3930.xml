@@ -1,0 +1,170 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="56AC0A6A-87C3-5214-0CC1-26FEB67A3930" name="ASISTENCIA">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>8B2F527C-897E-313A-47CC-89DEB8173203</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Asiste" id="F3F3CB3C-A9E1-60DA-495B-592E8F82954D">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>4BDF8DF0-76F9-C4E7-38B5-F0445B4BF84C</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Entrega" id="BF14AA4C-2D64-2C1A-C98B-A9133D4FDEFE">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>70A37714-D08D-53BC-2859-B267F532562B</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXAMEN_FechaYHora" id="3F2B251A-C509-66A9-A12F-658CF2D7A81B">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>346E7B1F-9944-D431-70C0-F35BD6340FEC</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A6E3CD46-9ACB-46BE-BD69-D28C191E73EE" referredColumn="69D06576-55B5-C297-1FB6-3F5A7982BE07"/>
+</associations>
+</Column>
+<Column name="EXAMEN_AULA_Código" id="67FFC55B-07BE-F872-AFB2-60326EDF91A8">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>FB7DF3A5-20A7-70A0-D5EB-82605EAF134D</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A6E3CD46-9ACB-46BE-BD69-D28C191E73EE" referredColumn="2F8D7049-89F6-1FCA-5885-5D6ACE3DF252"/>
+</associations>
+</Column>
+<Column name="EXAMEN_AULA_Código1" id="0CD72AC8-E3EF-3FB4-0725-F038461F9CD1">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>E1DBBE05-39B9-09B2-5175-662F9D38F198</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A6E3CD46-9ACB-46BE-BD69-D28C191E73EE" referredColumn="859B2035-D622-59A0-DE9D-FA4247B2996C"/>
+</associations>
+</Column>
+<Column name="ESTUDIANTE_DNI" id="B1095465-51AB-F9AA-7E6D-99E3412C07A6">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>A53F28FB-C8C7-3A4C-AA69-5DA075A1D45A</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3003D1BC-78CB-824B-88F4-EE701C8F1B0D" referredColumn="12A70A95-DDD4-FBFE-CB09-EFC3388E6E5F"/>
+</associations>
+</Column>
+<Column name="MATERIA_Código" id="150B0D45-C43B-BFFA-9D08-084542281D75">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>3E221EC9-7E23-1F3E-3B5B-5E9407FA9E2F</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="383DC6D4-B69F-F7C6-CDF4-D0ECC4FCCC24" referredColumn="13B28FA1-41F6-1B1A-6035-3F684C5D62A0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B296A0E-6B24-BF6F-F281-7B225303C964" name="ASISTENCIA_PK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>7EA269AF-AD88-E811-B11D-584CCB7EFCBE</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F2B251A-C509-66A9-A12F-658CF2D7A81B"/>
+<colUsage columnID="67FFC55B-07BE-F872-AFB2-60326EDF91A8"/>
+<colUsage columnID="0CD72AC8-E3EF-3FB4-0725-F038461F9CD1"/>
+<colUsage columnID="B1095465-51AB-F9AA-7E6D-99E3412C07A6"/>
+<colUsage columnID="150B0D45-C43B-BFFA-9D08-084542281D75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6D01194-B356-6740-A135-4E738229895C" name="ASISTENCIA_EXAMEN_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>CBC6DA42-C4B4-87F2-78F2-0DBECF9E3698</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F2B251A-C509-66A9-A12F-658CF2D7A81B"/>
+<colUsage columnID="67FFC55B-07BE-F872-AFB2-60326EDF91A8"/>
+<colUsage columnID="0CD72AC8-E3EF-3FB4-0725-F038461F9CD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12F9CBC7-1435-98F5-E7DE-C2599E54072B" name="ASISTENCIA_ESTUDIANTE_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>DCD63E27-B843-CB41-7F92-43BABD3526CC</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1095465-51AB-F9AA-7E6D-99E3412C07A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7066C4F3-B66D-57C8-9016-0DB1849FC5C8" name="ASISTENCIA_MATERIA_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>26B90FAE-3EDC-05FD-02C2-3C1FE6301521</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="150B0D45-C43B-BFFA-9D08-084542281D75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

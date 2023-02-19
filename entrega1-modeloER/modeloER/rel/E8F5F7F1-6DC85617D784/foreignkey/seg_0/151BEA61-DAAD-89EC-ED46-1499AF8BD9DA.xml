@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="151BEA61-DAAD-89EC-ED46-1499AF8BD9DA" containerWithKeyObject="6D760531-88F5-8B74-022E-1CF571829C1E" localFKIndex="E377979A-0FCC-CB8E-7EFA-A6BAAE084CCF" name="VOCAL_MATERIA_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>C01CE411-769E-A0BB-1592-678234B39C65</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<referredTableLongName>MATERIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AA6C2710-CBF4-4904-26BF-AAD2610C0953</referredTableID>
+<keyObject>6DEA6BF4-6420-CAB2-13CF-C8D4B48285E9</keyObject>
+<referredKeyID>6DEA6BF4-6420-CAB2-13CF-C8D4B48285E9</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>Código</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

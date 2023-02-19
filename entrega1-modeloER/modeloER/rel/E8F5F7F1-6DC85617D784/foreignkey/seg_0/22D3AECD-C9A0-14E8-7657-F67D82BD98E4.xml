@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="22D3AECD-C9A0-14E8-7657-F67D82BD98E4" containerWithKeyObject="14477EB5-1FCF-699D-47D8-52184C063958" localFKIndex="29B421D4-7265-CCF3-92D6-500AAA16452D" name="RVocal-ExamenVigila_EXAMEN_FK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 13:01:09 UTC</createdTime>
+<generatorID>2416A8A5-48F2-5E9F-8340-89CDEACB38CE</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<referredTableLongName>EXAMEN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ABE897F9-F494-8BE2-B9C2-9D0B2E829332</referredTableID>
+<keyObject>501D85F4-4885-037F-C430-914E5B81BB5C</keyObject>
+<referredKeyID>501D85F4-4885-037F-C430-914E5B81BB5C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>FechaYHora,AULA_Código,AULA_Código1</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

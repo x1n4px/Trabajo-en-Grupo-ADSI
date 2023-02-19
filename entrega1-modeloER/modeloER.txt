@@ -1,0 +1,282 @@
+-- Generado por Oracle SQL Developer Data Modeler 22.2.0.165.1149
+--   en:        2023-02-14 14:02:49 CET
+--   sitio:      Oracle Database 11g
+--   tipo:      Oracle Database 11g
+
+
+
+-- predefined type, no DDL - MDSYS.SDO_GEOMETRY
+
+-- predefined type, no DDL - XMLTYPE
+
+CREATE TABLE ane (
+    dni        VARCHAR2(8 CHAR) NOT NULL,
+    descabezar VARCHAR2(100 CHAR),
+    aulaaparte VARCHAR2(20 CHAR)
+);
+
+ALTER TABLE ane ADD CONSTRAINT ane_pk PRIMARY KEY ( dni );
+
+CREATE TABLE asistencia (
+    asiste              CHAR(1),
+    entrega             CHAR(1),
+    examen_fechayhora   DATE NOT NULL,
+    examen_aula_código  VARCHAR2(20 CHAR) NOT NULL,
+    examen_aula_código1 VARCHAR2(20 CHAR) NOT NULL,
+    estudiante_dni      VARCHAR2(8 CHAR) NOT NULL,
+    materia_código      VARCHAR2(20 CHAR) NOT NULL
+);
+
+ALTER TABLE asistencia
+    ADD CONSTRAINT asistencia_pk PRIMARY KEY ( examen_fechayhora,
+                                               examen_aula_código,
+                                               examen_aula_código1,
+                                               estudiante_dni,
+                                               materia_código );
+
+CREATE TABLE aula (
+    código           VARCHAR2(20 CHAR) NOT NULL,
+    capacidad        INTEGER NOT NULL,
+    capacidad_examen INTEGER NOT NULL,
+    descripción      VARCHAR2(200 CHAR),
+    sede_código      VARCHAR2(20 CHAR) NOT NULL
+);
+
+ALTER TABLE aula ADD CONSTRAINT aula_pk PRIMARY KEY ( código,
+                                                      sede_código );
+
+CREATE TABLE centro (
+    código      VARCHAR2(20 CHAR) NOT NULL,
+    nombre      VARCHAR2(100 CHAR) NOT NULL,
+    dirección   VARCHAR2(100 CHAR),
+    población   VARCHAR2(100 CHAR),
+    sede_código VARCHAR2(20 CHAR) NOT NULL
+);
+
+ALTER TABLE centro ADD CONSTRAINT centro_pk PRIMARY KEY ( código );
+
+CREATE TABLE estudiante (
+    dni           VARCHAR2(8 CHAR) NOT NULL,
+    nombre        VARCHAR2(100 CHAR) NOT NULL,
+    apellidos     VARCHAR2(100 CHAR) NOT NULL,
+    telefono      VARCHAR2(20 CHAR) NOT NULL,
+    correoe       VARCHAR2(100 CHAR),
+    centro_código VARCHAR2(20 CHAR) NOT NULL
+);
+
+ALTER TABLE estudiante ADD CONSTRAINT estudiante_pk PRIMARY KEY ( dni );
+
+CREATE TABLE examen (
+    fechayhora   DATE NOT NULL,
+    aula_código  VARCHAR2(20 CHAR) NOT NULL,
+    aula_código1 VARCHAR2(20 CHAR) NOT NULL,
+    vocal_dni    VARCHAR2(8 CHAR) NOT NULL
+);
+
+ALTER TABLE examen
+    ADD CONSTRAINT examen_pk PRIMARY KEY ( fechayhora,
+                                           aula_código,
+                                           aula_código1 );
+
+CREATE TABLE materia (
+    código VARCHAR2(20 CHAR) NOT NULL,
+    nombre VARCHAR2(100 CHAR) NOT NULL
+);
+
+ALTER TABLE materia ADD CONSTRAINT materia_pk PRIMARY KEY ( código );
+
+CREATE TABLE relation_10 (
+    examen_fechayhora DATE NOT NULL,
+    examen_código     VARCHAR2(20 CHAR) NOT NULL,
+    examen_código1    VARCHAR2(20 CHAR) NOT NULL,
+    materia_código    VARCHAR2(20 CHAR) NOT NULL
+);
+
+ALTER TABLE relation_10
+    ADD CONSTRAINT relation_10_pk PRIMARY KEY ( examen_fechayhora,
+                                                examen_código,
+                                                examen_código1,
+                                                materia_código );
+
+CREATE TABLE relation_11 (
+    materia_código VARCHAR2(20 CHAR) NOT NULL,
+    estudiante_dni VARCHAR2(8 CHAR) NOT NULL
+);
+
+ALTER TABLE relation_11 ADD CONSTRAINT relation_11_pk PRIMARY KEY ( materia_código,
+                                                                    estudiante_dni );
+
+CREATE TABLE "RVocal-ExamenVigila" (
+    vocal_dni           VARCHAR2(8 CHAR) NOT NULL,
+    examen_fechayhora   DATE NOT NULL,
+    examen_aula_código  VARCHAR2(20 CHAR) NOT NULL,
+    examen_aula_código1 VARCHAR2(20 CHAR) NOT NULL
+);
+
+ALTER TABLE "RVocal-ExamenVigila"
+    ADD CONSTRAINT "RVocal-ExamenVigila_PK" PRIMARY KEY ( vocal_dni,
+                                                          examen_fechayhora,
+                                                          examen_aula_código,
+                                                          examen_aula_código1 );
+
+CREATE TABLE sede (
+    código     VARCHAR2(20 CHAR) NOT NULL,
+    nombre     VARCHAR2(100 CHAR) NOT NULL,
+    tipo       VARCHAR2(100 CHAR),
+    vocal_dni  VARCHAR2(8 CHAR) NOT NULL,
+    vocal_dni2 VARCHAR2(8 CHAR) NOT NULL
+);
+
+CREATE UNIQUE INDEX sede__idx ON
+    sede (
+        vocal_dni
+    ASC );
+
+CREATE UNIQUE INDEX sede__idxv1 ON
+    sede (
+        vocal_dni2
+    ASC );
+
+ALTER TABLE sede ADD CONSTRAINT sede_pk PRIMARY KEY ( código );
+
+CREATE TABLE vocal (
+    dni            VARCHAR2(8 CHAR) NOT NULL,
+    nombre         VARCHAR2(20 CHAR) NOT NULL,
+    apelllidos     VARCHAR2(100 CHAR) NOT NULL,
+    tipo           VARCHAR2(100 CHAR),
+    cargo          VARCHAR2(100 CHAR),
+    materia_código VARCHAR2(20 CHAR)
+);
+
+ALTER TABLE vocal ADD CONSTRAINT vocal_pk PRIMARY KEY ( dni );
+
+ALTER TABLE ane
+    ADD CONSTRAINT ane_estudiante_fk FOREIGN KEY ( dni )
+        REFERENCES estudiante ( dni );
+
+ALTER TABLE asistencia
+    ADD CONSTRAINT asistencia_estudiante_fk FOREIGN KEY ( estudiante_dni )
+        REFERENCES estudiante ( dni );
+
+ALTER TABLE asistencia
+    ADD CONSTRAINT asistencia_examen_fk FOREIGN KEY ( examen_fechayhora,
+                                                      examen_aula_código,
+                                                      examen_aula_código1 )
+        REFERENCES examen ( fechayhora,
+                            aula_código,
+                            aula_código1 );
+
+ALTER TABLE asistencia
+    ADD CONSTRAINT asistencia_materia_fk FOREIGN KEY ( materia_código )
+        REFERENCES materia ( código );
+
+ALTER TABLE aula
+    ADD CONSTRAINT aula_sede_fk FOREIGN KEY ( sede_código )
+        REFERENCES sede ( código );
+
+ALTER TABLE centro
+    ADD CONSTRAINT centro_sede_fk FOREIGN KEY ( sede_código )
+        REFERENCES sede ( código );
+
+ALTER TABLE estudiante
+    ADD CONSTRAINT estudiante_centro_fk FOREIGN KEY ( centro_código )
+        REFERENCES centro ( código );
+
+ALTER TABLE examen
+    ADD CONSTRAINT examen_aula_fk FOREIGN KEY ( aula_código,
+                                                aula_código1 )
+        REFERENCES aula ( código,
+                          sede_código );
+
+ALTER TABLE examen
+    ADD CONSTRAINT examen_vocal_fk FOREIGN KEY ( vocal_dni )
+        REFERENCES vocal ( dni );
+
+ALTER TABLE relation_10
+    ADD CONSTRAINT relation_10_examen_fk FOREIGN KEY ( examen_fechayhora,
+                                                       examen_código,
+                                                       examen_código1 )
+        REFERENCES examen ( fechayhora,
+                            aula_código,
+                            aula_código1 );
+
+ALTER TABLE relation_10
+    ADD CONSTRAINT relation_10_materia_fk FOREIGN KEY ( materia_código )
+        REFERENCES materia ( código );
+
+ALTER TABLE relation_11
+    ADD CONSTRAINT relation_11_estudiante_fk FOREIGN KEY ( estudiante_dni )
+        REFERENCES estudiante ( dni );
+
+ALTER TABLE relation_11
+    ADD CONSTRAINT relation_11_materia_fk FOREIGN KEY ( materia_código )
+        REFERENCES materia ( código );
+
+ALTER TABLE "RVocal-ExamenVigila"
+    ADD CONSTRAINT "RVocal-ExamenVigila_EXAMEN_FK" FOREIGN KEY ( examen_fechayhora,
+                                                                 examen_aula_código,
+                                                                 examen_aula_código1 )
+        REFERENCES examen ( fechayhora,
+                            aula_código,
+                            aula_código1 );
+
+ALTER TABLE "RVocal-ExamenVigila"
+    ADD CONSTRAINT "RVocal-ExamenVigila_VOCAL_FK" FOREIGN KEY ( vocal_dni )
+        REFERENCES vocal ( dni );
+
+ALTER TABLE sede
+    ADD CONSTRAINT sede_vocal_fk FOREIGN KEY ( vocal_dni )
+        REFERENCES vocal ( dni );
+
+ALTER TABLE sede
+    ADD CONSTRAINT sede_vocal_fkv2 FOREIGN KEY ( vocal_dni2 )
+        REFERENCES vocal ( dni );
+
+ALTER TABLE vocal
+    ADD CONSTRAINT vocal_materia_fk FOREIGN KEY ( materia_código )
+        REFERENCES materia ( código );
+
+
+
+-- Informe de Resumen de Oracle SQL Developer Data Modeler: 
+-- 
+-- CREATE TABLE                            12
+-- CREATE INDEX                             2
+-- ALTER TABLE                             30
+-- CREATE VIEW                              0
+-- ALTER VIEW                               0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           0
+-- ALTER TRIGGER                            0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE STRUCTURED TYPE BODY              0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          0
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE MATERIALIZED VIEW LOG             0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- REDACTION POLICY                         0
+-- 
+-- ORDS DROP SCHEMA                         0
+-- ORDS ENABLE SCHEMA                       0
+-- ORDS ENABLE OBJECT                       0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0

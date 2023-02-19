@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="77FA54FD-4713-C2EC-7640-0987991C8DC9" name="EXAMEN">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:49:44 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="FechaYHora" id="AE30B885-A93A-7494-D9B5-1410AF35AF89">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:49:48 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Código" id="D70EF249-7B37-8FA4-D700-FC8E2C5A59CA">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:53:11 UTC</createdTime>
+<generatorID>904FDBBD-D3C4-23C6-F467-FA61D4ED6580</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<referedAttribute>B504D673-EC2C-7483-2A5F-5F1BB9CD1AC2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Código1" id="8EE6A629-481D-AB4E-5BD7-F6D21F0DB9A8">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:53:11 UTC</createdTime>
+<generatorID>904FDBBD-D3C4-23C6-F467-FA61D4ED6580</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<referedAttribute>9EF77480-4385-459E-FA13-82F6433DB1AE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DNI" id="39FECB15-9F1D-6B60-014D-3FD9F54E7CCF">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:54:27 UTC</createdTime>
+<generatorID>64C8E80F-A10A-6944-984D-DC19DEF2548A</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<referedAttribute>7C252EC4-8FF0-C739-C328-B906E8FAF65E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1C841838-7A29-AF93-D758-76E085F02A33" name="EXAMEN PK">
+<createdBy>iN4P</createdBy>
+<createdTime>2023-02-14 12:50:02 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="E8F5F7F1-9F47-2429-CFD5-6DC85617D784" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AE30B885-A93A-7494-D9B5-1410AF35AF89</attributeRef>
+<attributeRef>D70EF249-7B37-8FA4-D700-FC8E2C5A59CA</attributeRef>
+<attributeRef>8EE6A629-481D-AB4E-5BD7-F6D21F0DB9A8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
